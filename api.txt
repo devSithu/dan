@@ -1,0 +1,80 @@
+
+News Management
+===============
+create news
+-------------------
+post=>http://localhost/DAN/public/api/news/insert
+keys=>title,detial,photo,type
+(type must be 'normal' or 'special')
+
+get all news
+------------------
+get=>http://localhost/DAN/public/api/get_all_news/{type}
+(type must be 'normal' or 'special')
+
+update news
+------------------
+post=>http://localhost/DAN/public/api/news/update/{news_id}
+keys=>title,detial,photo,type
+(type must be 'normal' or 'special')
+
+delete news
+----------------
+get=>http://localhost/DAN/public/api/news/delete/{news_id}
+
+detail news
+----------------
+get=>http://localhost/DAN/public/api/news/detail/{id}
+
+
+Emergency Content Management
+==============================
+create emergency
+-------------------
+post=>http://localhost/DAN/public/api/insert_contact
+keys=>name,photo
+
+get all emergency
+------------------
+get=>http://localhost/DAN/public/api/get_all_contact
+
+update emergency
+------------------
+post=>http://localhost/DAN/public/api/update_emer/{id}
+keys=>name,phone
+
+delete emergency
+----------------
+get=>http://localhost/DAN/public/api/delete_contact/{id}
+
+edit emergency
+----------------
+get=>http://localhost/DAN/public/api/edit_contact/{id}
+
+
+Education Menagement
+=====================
+create education
+-------------------
+post=>http://localhost/DAN/public/api/insert_education
+keys=>title,detail,photo
+
+get all education
+------------------
+get=>http://localhost/DAN/public/api/get_all_education
+
+update education
+------------------
+post=>http://localhost/DAN/public/api/update_edu/{id}
+keys=>title,detail,photo
+
+delete education
+----------------
+get=>http://localhost/DAN/public/api/delete_edu/{id}
+
+edit education
+----------------
+get=>http://localhost/DAN/public/api/edit_edu/{id}
+
+
+

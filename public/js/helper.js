@@ -1,0 +1,1 @@
+const domain = "http://localhost/DAN/public/";
